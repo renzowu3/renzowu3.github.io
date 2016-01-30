@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bluemix Basics
+title: SSO
 permalink: /sso/
 ---
 
