@@ -4,7 +4,7 @@ title: SSO
 permalink: /sso/
 ---
 
-##Application Development Tutorial
+##Single Sign On Tutorial
 
 ###Bluemix Basics - I'M STILL EDITING THIS
 IBM [Bluemix](https://ibm.biz/bluemixph) is a platform as a service (PaaS) cloud technology of IBM.  You may develop applications and deploy them in Bluemix.
