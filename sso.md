@@ -18,8 +18,6 @@ You will download two web applications that will be deploy in your Bluemix accou
 
  1. Create the directory `SSOtemp` in the root directory. Create two subdirectory `Application1` and `Application2` in `SSOtemp`.
  
-<br>
- 
  2. Download SSO-APP1.war and SSO-APP2.war and save them to `Application1` and `Application2` subdirectory respectively.
 
 ----------
@@ -43,7 +41,7 @@ You will download two web applications that will be deploy in your Bluemix accou
 
 ----------
 
- **Add and Configure Single Sign On Service**
+ **Create Single Sign On Service**
  
  
 
@@ -61,11 +59,26 @@ You will download two web applications that will be deploy in your Bluemix accou
 	 The name that you are prompted for in this step is not the same as the name displayed in step 5. This name is a unique ID that becomes the URL prefix for the redirect URL of your service. The name can be up to 32 characters in length and must start with an alphanumeric character. You cannot change this name unless you delete and then re-create the service.
 
  6. Click `Continue`.
+ 
  7. As you can see on the left menu , you can add new `Identity Source` or add  existing ones which are `SAML Enterprise`, `Cloud Directory`, and `Social Identity Source`.
  
- For this tutorial we will be using `Cloud Directory`. 
+**Adding a Cloud Directory Identity Source** 
 
-	**Note:**
-	The `Cloud Directory` identity source uses a user registry that is hosted in the Cloud. The Cloud Directory hosts password policies and user information.
+The `Cloud Directory` identity source uses a user registry that is hosted in the Cloud. The Cloud Directory hosts password policies and user information.
 
- 8. 
+ 1. Click `Cloud Directory`.
+
+ 2. Type a name for the identity source and click save.
+ 
+ 3. Add a user to the directory. Click the `+` to add a user . Once you add a user you can `delete` or `edit` it.
+ 4. Click save. It is enabled by default.
+ 
+ 5. Click the Identity source you created.
+
+ 6. Click the `Settings` icon beside save button. Leave auto consent `on`.
+> **Note:** Auto Consent setting is on, an application can retrieve the user's identity information without asking the user for consent. Turn off this setting to prompt the user before retrieving identity information.
+
+ 7. Click Password Policy. Explore different policy level.
+ 8. Click save. 
+
+	 
