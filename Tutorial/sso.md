@@ -17,7 +17,7 @@ You will download two web applications that will be deploy in your Bluemix accou
 
  1. Create the directory `SSOtemp` in the root directory. Create two subdirectory `Application1` and `Application2` in `SSOtemp`.
  
- 2. Download SSO-APP1.war and SSO-APP2.war and save them to `Application1` and `Application2` subdirectory respectively.
+ 2. Download [SSO-APP1.war](https://github.com/renzowu3/renzowu3.github.io/raw/master/Tutorial/SSO-APP1/build/libs/SSO-APP1.war) and [SSO-APP2.war](https://github.com/renzowu3/renzowu3.github.io/raw/master/Tutorial/SSO-APP2/build/libs/SSO-APP2.war) and save them to `Application1` and `Application2` subdirectory respectively.
 
 ----------
 **Deploy the web applications in Bluemix using `cf` tool.**
@@ -83,7 +83,7 @@ The `Cloud Directory` identity source uses a user registry that is hosted in the
  
 	**Note:** Auto Consent setting is on, an application can retrieve the user's identity information without asking the user for consent. Turn off this setting to prompt the user before retrieving identity information.
 
- 7. Click Password Policy. Explore different policy level.
+ 7. Click Password Policy. Explore the different policy level.
  8. Click save. 
 
 ----------
@@ -116,7 +116,7 @@ You will bind the service to the two web applications.
 5.	Repeat step number 1  to number 4 for `APP2-<your_name>`.
 
   ----------
- **Understanding How the Web Applications are configured** 
+**Understanding How the Web Applications are configured** 
 
 After you bind the web applications to the single sign on service, the Bluemix buildpack detects that the application is bound and automatically configures the OIDC client in the Liberty runtime `server.xml` to enable the application for the service. 
 
@@ -174,4 +174,4 @@ If you extract the contents of `SSO-APP1.war` and `SSO-APP2.war`, inside the WEB
  6. Click the URL of the application. It should not ask you to login.
 
  ----------
- **End of Tutorial**
+**End of Tutorial**
