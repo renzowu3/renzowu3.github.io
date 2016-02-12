@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SSO
+title: Single Sign On
 permalink: /sso/
 ---
 
