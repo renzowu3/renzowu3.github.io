@@ -17,6 +17,7 @@ In this tutorial you will learn how to use single sign on for user authenticatio
 You will download two web applications that will be deploy in your Bluemix account.
 
  1. Create the directory `SSOtemp` in the root directory. Create two subdirectory `Application1` and `Application2` in `SSOtemp`.
+ 
  2. Download SSO-APP1.war and SSO-APP2.war and save them to `Application1` and `Application2` subdirectory respectively.
 
 ----------
@@ -63,7 +64,7 @@ You will download two web applications that will be deploy in your Bluemix accou
  
 **Adding a Cloud Directory Identity Source** 
 
-The `Cloud Directory` identity source uses a user registry that is hosted in the Cloud. The Cloud Directory hosts password policies and user information.
+The `Cloud Directory` identity source uses a user registry that is hosted in the Cloud. It hosts password policies and user information.
 
  1. Click `Cloud Directory`.
 
@@ -80,4 +81,54 @@ The `Cloud Directory` identity source uses a user registry that is hosted in the
  7. Click Password Policy. Explore different policy level.
  8. Click save. 
 
+----------
+**Bind Single Sign On Service to Web Applications** 
+
+You will bind the service to the two web applications.
+
+ 1. Click `APP1-<your_name>` in your `Dashboard`.
+ 
+ 2. Click `Bind a Service or API`. 
+ 
+ 3. Choose the `single sign on service` you created. 
+ 
+ 4. Repeat step number 1 for `APP2-<your_name>` and choose the `same single sign on service`.
+
+ ----------
+ **Understanding How the Web Applications are configured** 
+
+Set security constraints in `web.xml`.
+
+    <security-constraint>
+    		<display-name>UserConstraint</display-name>
+    		<web-resource-collection>
+    		  <web-resource-name>UserCollection</web-resource-name>
+    		  <url-pattern>/</url-pattern>
+    		  <url-pattern>/*</url-pattern>
+    		  <url-pattern>http://sso-app1.mybluemix.net/SSO-APP.jsp</url-pattern>
+    		  <http-method>GET</http-method>
+    		  <http-method>PUT</http-method>
+    		  <http-method>HEAD</http-method>
+    		  <http-method>TRACE</http-method>
+    		  <http-method>POST</http-method>
+    		  <http-method>DELETE</http-method>
+    		  <http-method>OPTIONS</http-method>
+    		</web-resource-collection>
+    		<auth-constraint>
+    		  <role-name>any-authenticated</role-name>
+    		</auth-constraint>
+    	</security-constraint>
+
+Enable the security constraints in `server.xml`.
+
+    <application type="war" id="<applicationname>" name="<applicationname>" 
+               location="${server.config.dir}/<path_to_.WAR_file from server directory>">
+            <application-bnd>
+                <security-role name="<rolename>">
+                    <special-subject type="ALL_AUTHENTICATED_USERS"/>
+                </security-role>
+            </application-bnd>
+        </application>
+
+ ----------
 	 
