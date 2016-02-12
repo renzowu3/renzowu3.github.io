@@ -96,6 +96,7 @@ You will bind the service to the two web applications.
  4. Click `Restage`.
  
  5. Repeat step number 1 to number 3 for `APP2-<your_name>` 
+ 
  **Note:** Choose the `same single sign on service`.
 
  ----------
