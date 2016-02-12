@@ -63,6 +63,8 @@ You will download two web applications that will be deploy in your Bluemix accou
  
  7. As you can see on the left menu , you can add new `Identity Source` or add  existing ones which are `SAML Enterprise`, `Cloud Directory`, and `Social Identity Source`.
  
+ ----------
+ 
 **Adding a Cloud Directory Identity Source** 
 
 The `Cloud Directory` identity source uses a user registry that is hosted in the Cloud. It hosts password policies and user information.
@@ -72,6 +74,7 @@ The `Cloud Directory` identity source uses a user registry that is hosted in the
  2. Type a name for the identity source and click save.
  
  3. Add a user to the directory. Click the `+` to add a user . Once you add a user you can `delete` or `edit` it.
+ 
  4. Click save. It is enabled by default.
  
  5. Click the Identity source you created.
