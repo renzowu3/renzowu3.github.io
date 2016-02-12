@@ -17,6 +17,7 @@ In this tutorial you will learn how to use single sign on for user authenticatio
 You will download two web applications that will be deploy in your Bluemix account.
 
  1. Create the directory `SSOtemp` in the root directory. Create two subdirectory `Application1` and `Application2` in `SSOtemp`.
+ 
  2. Download SSO-APP1.war and SSO-APP2.war and save them to `Application1` and `Application2` subdirectory respectively.
 
 ----------
@@ -42,11 +43,27 @@ You will download two web applications that will be deploy in your Bluemix accou
 
  **Add and Configure Single Sign On Service**
  
+ 
 
+ 1. Go back to the browser containing your Bluemix account. In the menu bar, click `Catalog`.
 
+ 2. Search for the `Single Sign On` service and click it.
+ 
+ 3. In the `Service name` text box, enter any name you want.
+ 
+ 4. Click `Create`.
 
+ 5. You will be ask to type a `unique ID` for the service.
+ 
+	 **Note:** 
+	 The name that you are prompted for in this step is not the same as the name displayed in step 5. This name is a unique ID that becomes the URL prefix for the redirect URL of your service. The name can be up to 32 characters in length and must start with an alphanumeric character. You cannot change this name unless you delete and then re-create the service.
 
+ 6. Click `Continue`.
+ 7. As you can see on the left menu , you can add new `Identity Source` or add  existing ones which are `SAML Enterprise`, `Cloud Directory`, and `Social Identity Source`.
+ 
+ For this tutorial we will be using `Cloud Directory`. 
 
+	**Note:**
+	The `Cloud Directory` identity source uses a user registry that is hosted in the Cloud. The Cloud Directory hosts password policies and user information.
 
-
-
+ 8. 
