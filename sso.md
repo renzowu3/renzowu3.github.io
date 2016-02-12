@@ -17,7 +17,6 @@ In this tutorial you will learn how to use single sign on for user authenticatio
 You will download two web applications that will be deploy in your Bluemix account.
 
  1. Create the directory `SSOtemp` in the root directory. Create two subdirectory `Application1` and `Application2` in `SSOtemp`.
- 
  2. Download SSO-APP1.war and SSO-APP2.war and save them to `Application1` and `Application2` subdirectory respectively.
 
 ----------
