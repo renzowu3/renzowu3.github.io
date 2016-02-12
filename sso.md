@@ -99,24 +99,24 @@ You will bind the service to the two web applications.
 Set security constraints in `web.xml`.
 
     <security-constraint>
-    		<display-name>UserConstraint</display-name>
-    		<web-resource-collection>
-    		  <web-resource-name>UserCollection</web-resource-name>
-    		  <url-pattern>/</url-pattern>
-    		  <url-pattern>/*</url-pattern>
-    		  <url-pattern>http://sso-app1.mybluemix.net/SSO-APP.jsp</url-pattern>
-    		  <http-method>GET</http-method>
-    		  <http-method>PUT</http-method>
-    		  <http-method>HEAD</http-method>
-    		  <http-method>TRACE</http-method>
-    		  <http-method>POST</http-method>
-    		  <http-method>DELETE</http-method>
-    		  <http-method>OPTIONS</http-method>
-    		</web-resource-collection>
-    		<auth-constraint>
-    		  <role-name>any-authenticated</role-name>
-    		</auth-constraint>
-    	</security-constraint>
+		<display-name><displayname></display-name>
+		<web-resource-collection>
+		  <web-resource-name><resourcename></web-resource-name>
+		  <url-pattern>/</url-pattern>
+		  <url-pattern>/*</url-pattern>
+		  <url-pattern>/<applicationname>/*</url-pattern>
+		  <http-method>GET</http-method>
+		  <http-method>PUT</http-method>
+		  <http-method>HEAD</http-method>
+		  <http-method>TRACE</http-method>
+		  <http-method>POST</http-method>
+		  <http-method>DELETE</http-method>
+		  <http-method>OPTIONS</http-method>
+		</web-resource-collection>
+		<auth-constraint>
+		  <role-name><rolename></role-name>
+		</auth-constraint>
+	</security-constraint>
 
 Enable the security constraints in `server.xml`.
 
