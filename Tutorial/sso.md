@@ -77,7 +77,8 @@ The `Cloud Directory` identity source uses a user registry that is hosted in the
  5. Click the Identity source you created.
 
  6. Click the `Settings` icon beside save button. Leave auto consent `on`.
-> **Note:** Auto Consent setting is on, an application can retrieve the user's identity information without asking the user for consent. Turn off this setting to prompt the user before retrieving identity information.
+ 
+	**Note:** Auto Consent setting is on, an application can retrieve the user's identity information without asking the user for consent. Turn off this setting to prompt the user before retrieving identity information.
 
  7. Click Password Policy. Explore different policy level.
  8. Click save. 
@@ -96,8 +97,7 @@ You will bind the service to the two web applications.
  4. Click `Restage`.
  
  5. Repeat step number 1 to number 3 for `APP2-<your_name>` 
- 
- **Note:** Choose the `same single sign on service`.
+	 **Note:** Choose the `same single sign on service`.
 
  ----------
  **Integrating the Web Applications with the Service**
@@ -149,7 +149,12 @@ Enable the security constraints in `server.xml`.
         </application>
 
  ----------
-**Launch the Application**
+**Test the Single Sign On Service**
+
+ 1. Go to the `Dashboard` and click any of the two web applications.
+ 2. Click the URL of the application.
+ 
+ **Example:**  `app1-renzo.mybluemix.net`
 
  ----------
  **End of Tutorial**
