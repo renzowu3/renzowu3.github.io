@@ -18,6 +18,8 @@ You will download two web applications that will be deploy in your Bluemix accou
 
  1. Create the directory `SSOtemp` in the root directory. Create two subdirectory `Application1` and `Application2` in `SSOtemp`.
  
+<br>
+ 
  2. Download SSO-APP1.war and SSO-APP2.war and save them to `Application1` and `Application2` subdirectory respectively.
 
 ----------
