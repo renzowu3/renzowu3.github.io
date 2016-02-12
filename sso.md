@@ -3,7 +3,6 @@ layout: post
 title: Single Sign On Tutorial
 permalink: /sso/
 ---
-
 ----------
 Single sign on is a user authentication process that permits a user to enter one username and password in order to access multiple applications.
 
@@ -131,4 +130,7 @@ Enable the security constraints in `server.xml`.
         </application>
 
  ----------
-	 
+**Launch the Application**
+
+ ----------
+ **End of Tutorial**
