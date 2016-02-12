@@ -91,9 +91,22 @@ You will bind the service to the two web applications.
  
  3. Choose the `single sign on service` you created. 
  
- 4. Repeat step number 1 for `APP2-<your_name>` and choose the `same single sign on service`.
+ 4. Repeat step number 1 to number 3 for `APP2-<your_name>` and choose the `same single sign on service`.
 
  ----------
+ **Integrating the Web Applications with the Service**
+
+1.	 Go back to the `Dashboard` and click `APP1-<your_name>`.
+
+2.	On the left menu, click `Single Sign On`.
+
+3.	Click the `Integrate` tab to configure the application.
+
+4.	Click Save.
+
+5.	Repeat step number 1  to number 4 for `APP2-<your_name>`.
+
+  ----------
  **Understanding How the Web Applications are configured** 
 
 Set security constraints in `web.xml`.
