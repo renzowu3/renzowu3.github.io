@@ -31,7 +31,9 @@ You will download two web applications that will be deploy in your Bluemix accou
 
 	**Example:**
  >`cf push APP1-renzo -m 256M -p SSO-APP1.war`
- 4. Upload the second web application `SSO-APP2.war` to your Bluemix account.
+ 4. Go to the `Application2` subdirectory.
+ 
+ 5. Upload the second web application `SSO-APP2.war` to your Bluemix account.
   > `cf push APP2-<your_name> -m 256M -p SSO-APP2.war`
 
 	**Example:**
@@ -89,9 +91,12 @@ You will bind the service to the two web applications.
  
  2. Click `Bind a Service or API`. 
  
- 3. Choose the `single sign on service` you created. 
+ 3. Choose the `single sign on service` you created and click `Add`. 
+
+ 4. Click `Restage`.
  
- 4. Repeat step number 1 to number 3 for `APP2-<your_name>` and choose the `same single sign on service`.
+ 5. Repeat step number 1 to number 3 for `APP2-<your_name>` 
+ **Note:** Choose the `same single sign on service`.
 
  ----------
  **Integrating the Web Applications with the Service**
