@@ -115,7 +115,13 @@ You will bind the service to the two web applications.
   ----------
  **Understanding How the Web Applications are configured** 
 
-Set security constraints in `web.xml`.
+After you bind the web applications to the single sign on service, the Bluemix buildpack detects that the application is bound and automatically configures the OIDC client in the Liberty runtime `server.xml` to enable the application for the service. 
+
+To complete the configuration of the application, you must add security constraints.
+
+If you extract the contents of `SSO-APP1.war` and `SSO-APP2.war`, inside the WEB-INF directory, you will the `web.xml`.
+
+`web.xml` is to set the security constraints.
 
     <security-constraint>
 		<display-name><displayname></display-name>
@@ -137,7 +143,7 @@ Set security constraints in `web.xml`.
 		</auth-constraint>
 	</security-constraint>
 
-Enable the security constraints in `server.xml`.
+`server.xml` is to enable the security constraints.
 
     <application type="war" id="<applicationname>" name="<applicationname>" 
                location="${server.config.dir}/<path_to_.WAR_file from server directory>">
@@ -151,10 +157,16 @@ Enable the security constraints in `server.xml`.
  ----------
 **Test the Single Sign On Service**
 
- 1. Go to the `Dashboard` and click any of the two web applications.
- 2. Click the URL of the application.
+ 1. Go to the `Dashboard` and click `APP1-<your_name>`.
  
- **Example:**  `app1-renzo.mybluemix.net`
-
+ 2. Click the URL of the application.
+	  **Example:**  `app1-renzo.mybluemix.net`
+	  
+ 3. Log in to the account you created in cloud directory.
+ 4. Go back to the browser tab containing your Bluemix account and click `Dashboard`.
+ 
+ 5. On `Applications` section, click `APP2-<your_name>`.
+ 
+ 6. Click the URL of the application. It should not ask you to login.
  ----------
  **End of Tutorial**
