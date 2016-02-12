@@ -163,10 +163,12 @@ If you extract the contents of `SSO-APP1.war` and `SSO-APP2.war`, inside the WEB
 	  **Example:**  `app1-renzo.mybluemix.net`
 	  
  3. Log in to the account you created in cloud directory.
+ 
  4. Go back to the browser tab containing your Bluemix account and click `Dashboard`.
  
  5. On `Applications` section, click `APP2-<your_name>`.
  
  6. Click the URL of the application. It should not ask you to login.
+
  ----------
  **End of Tutorial**
