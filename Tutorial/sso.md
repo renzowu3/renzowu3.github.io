@@ -148,7 +148,7 @@ If you extract the contents of `SSO-APP1.war` and `SSO-APP2.war`, inside the WEB
 		</auth-constraint>
 	</security-constraint>
 
-`server.xml` is to enable the security constraints.
+`ibm-application-bnd.xml` is to enable the security constraints.
 
     <application type="war" id="<applicationname>" name="<applicationname>" 
                location="${server.config.dir}/<path_to_.WAR_file from server directory>">
@@ -165,7 +165,8 @@ If you extract the contents of `SSO-APP1.war` and `SSO-APP2.war`, inside the WEB
  1. Go to the `Dashboard` and click `APP1-<your_name>`.
  
  2. Click the URL of the application.
-	  **Example:**  `app1-renzo.mybluemix.net`
+	  
+	**Example:**  `app1-renzo.mybluemix.net`
 	  
  3. Log in to the account you created in cloud directory.
  
