@@ -8,6 +8,8 @@ Single sign on is an user authentication process that permits a user to enter on
 
 In this tutorial you will learn how to use single sign on for user authentication. 
 
+Powerpoint Available here: [PPT](https://github.com/renzowu3/renzowu3.github.io/raw/master/Tutorial/Single%20Sign%20On.pptx)
+
 ----------
 
 **Download the Web Applications**
