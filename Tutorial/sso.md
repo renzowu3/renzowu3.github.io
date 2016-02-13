@@ -83,7 +83,7 @@ The `Cloud Directory` identity source uses a user registry that is hosted in the
  
 	**Note:** Auto Consent setting is on, an application can retrieve the user's identity information without asking the user for consent. Turn off this setting to prompt the user before retrieving identity information.
 
- 7. Click Password Policy. Explore the different policy level.
+ 7. Click Password Policy. Choose `None`.
  8. Click save. 
 
 ----------
