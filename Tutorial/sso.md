@@ -164,7 +164,7 @@ If you extract the contents of `SSO-APP1.war` and `SSO-APP2.war`, inside the WEB
 
  1. Go to the `Dashboard` and click `APP1-<your_name>`.
  
- 2. Click the URL of the application.
+ 2. Click the URL of the application. `app1-<your_name>.mybluemix.net`
 	  
 	**Example:**  `app1-renzo.mybluemix.net`
 	  
