@@ -4,7 +4,7 @@ title: Single Sign On Tutorial
 permalink: /sso/
 ---
 ----------
-Single sign on is an user authentication process that permits a user to enter one username and password in order to access multiple applications.
+**Single sign on** is an user authentication process that permits a user to enter one username and password in order to access multiple applications.
 
 In this tutorial you will learn how to use single sign on for user authentication. 
 
@@ -166,17 +166,23 @@ If you extract the contents of `SSO-APP1.war` and `SSO-APP2.war`, inside the WEB
 	  
 	**Example:**  `app1-renzo.mybluemix.net`
 	  
- 3. Log in to the account you created in cloud directory.
+ 3. Go back to the browser tab containing your `Dashboard` and click `APP2-<your_name>`.
  
- 4. Go back to the browser tab containing your Bluemix account and click `Dashboard`.
+ 4. Click the URL of the application. `app2-<your_name>.mybluemix.net`
+	  
+	**Example:**  `app2-renzo.mybluemix.net`
+	
+	 **Note:** Observe that both of the web applications show the login page created by the service.
  
- 5. On `Applications` section, click `APP2-<your_name>`.
+ 5. Login to the account you created on one of the web application `app1-<yourname>` and close the other one `app2-<yourname>`.
  
- 6. Click the URL of the application. It should not ask you to login.
+ 6. Go back to the browser tab containing your `Dashboard` and open `app2-<yourname>`.
+ 
+ 7. Click the URL of the web appliction. It should not ask you to login again.
 
  ----------
  Download Powerpoint here: [PPT](https://github.com/renzowu3/renzowu3.github.io/raw/master/Tutorial/Single%20Sign%20On.pptx)
- <br>
+ 
  Source code here: [Tutorial Files](https://github.com/renzowu3/renzowu3.github.io.git)
  ----------
 **End of Tutorial**
