@@ -57,7 +57,7 @@ You will download two web applications that will be deploy in your Bluemix accou
  5. You will be ask to type a `unique ID` for the service.
  
 	 **Note:** 
-	 The name that you are prompted for in this step is not the same as the name displayed in step 5. This name is a unique ID that becomes the URL prefix for the redirect URL of your service. The name can be up to 32 characters in length and must start with an alphanumeric character. You cannot change this name unless you delete and then re-create the service.
+	 This name is a unique ID that becomes the URL prefix for the redirect URL of your service. The name can be up to 32 characters in length and must start with an alphanumeric character. You cannot change this name unless you delete and then re-create the service.
 
  6. Click `Continue`.
  
