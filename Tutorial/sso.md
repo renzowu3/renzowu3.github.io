@@ -8,8 +8,6 @@ Single sign on is an user authentication process that permits a user to enter on
 
 In this tutorial you will learn how to use single sign on for user authentication. 
 
-Powerpoint Available here: [PPT](https://github.com/renzowu3/renzowu3.github.io/raw/master/Tutorial/Single%20Sign%20On.pptx)
-
 ----------
 
 **Download the Web Applications**
@@ -176,5 +174,8 @@ If you extract the contents of `SSO-APP1.war` and `SSO-APP2.war`, inside the WEB
  
  6. Click the URL of the application. It should not ask you to login.
 
+ ----------
+ Download Powerpoint here: [PPT](https://github.com/renzowu3/renzowu3.github.io/raw/master/Tutorial/Single%20Sign%20On.pptx)
+ Source code here: [Tutorial Files](https://github.com/renzowu3/renzowu3.github.io.git)
  ----------
 **End of Tutorial**
